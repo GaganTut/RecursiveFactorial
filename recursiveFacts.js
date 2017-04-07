@@ -8,7 +8,7 @@ const recurseFactorial = (num) => {
 };
 
 const checkNum = (num) => {
-  if (typeof num !== "number" || num < 0 || num === Infinity || num.isNaN) {
+  if (typeof num !== "number" || num < 0 || num === Infinity || isNaN(num)) {
     throw new Error("Positive Integers Only");
   }
 };
